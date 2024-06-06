@@ -29,12 +29,12 @@ function addProduct(){
 
 
     }
-    if(regexName.test(allInput[0].value)==false||regexurl.test(allInput[1].value)==false ){
-        wrong.classList.remove("d-none")
-        productList.pop()
+    // if(regexName.test(allInput[0].value)==false||regexurl.test(allInput[1].value)==false ){
+    //     wrong.classList.remove("d-none")
+    //     productList.pop()
 
 
-    }
+    // }
 
     localStorage.setItem("productsContanier" , JSON.stringify(productList))
     
