@@ -23,18 +23,18 @@ function addProduct(){
     }
     
     productList.push(product)
-    if(allInput[0].value==""|| allInput[1].value=="" ){
+    
+    // if(allInput[0].value==""|| allInput[1].value=="" ){
+    //     wrong.classList.remove("d-none")
+    //     productList.pop()
+    // }
+    
+    if(regexName.test(allInput[0].value)==false||regexurl.test(allInput[1].value)==false ){
         wrong.classList.remove("d-none")
         productList.pop()
 
 
     }
-    // if(regexName.test(allInput[0].value)==false||regexurl.test(allInput[1].value)==false ){
-    //     wrong.classList.remove("d-none")
-    //     productList.pop()
-
-
-    // }
 
     localStorage.setItem("productsContanier" , JSON.stringify(productList))
     
